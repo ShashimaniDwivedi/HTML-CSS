@@ -1,0 +1,237 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Main color:#087f5b */
+/* color:#343a40 */
+/* ------------------------ */
+/* GENERAL STYLES
+ */
+/* ------------------------ */
+.head{
+	/* display:grid;
+	align-items: center;
+	justify-content:center; */
+	font-family:'Inter', sans-serif;
+	padding: 40px;
+	margin-top: 20px;
+	padding-left: 100px;
+	
+	color:#ebfbee;
+	background-color: #087f5b;
+	border:2px solid #087f5b;
+	border-radius: 100px;
+	width:980px;
+}
+
+body {
+	font-family: "Inter", sans-serif; /*Before (,) first priority and if it is not available the use after , font*/
+	color: #343a40;
+	border-bottom: 8px solid #0ca678;
+}
+.btn:link,
+.btn:visited {
+	background-color: #087f5b;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	display: inline-block;
+	border-radius: 100px;
+	/* for square to make element round use 50% */
+}
+.btn:hover,
+.btn:active {
+	background-color: #099268;
+}
+.btn--big {
+	font-size: 18px;
+	padding: 16px 32px;
+}
+.btn--small {
+	font-size: 14px;
+	padding: 8px 16px;
+}
+
+img {
+	border-radius: 12px;
+}
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header,
+section {
+	margin-bottom: 96px;
+}
+
+h2 {
+	margin-bottom: 48px;
+	font-size: 36px;
+	letter-spacing: -0.5px;
+}
+
+.grid-3-cols {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 80px;
+}
+
+/* ------------------------ */
+/* COMPONENT STYLES */
+/* ------------------------ */
+
+/* HEADER */
+header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 80px;
+	margin-top: 64px;
+}
+
+.header-text-box {
+	align-self: center;
+}
+
+h1 {
+	margin-bottom: 32px;
+	font-size: 44px;
+	/*44 52 62*/
+	line-height: 1.1;
+	letter-spacing: -1px;
+	text-shadow: 0px 6px 3px rgba(52, 58, 64, 0.1); /*This property add shadow to element*/
+}
+
+.header-text {
+	margin-bottom: 24px;
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+img {
+	width: 100%;
+}
+
+/* FEATURES */
+.features-icon {
+	stroke: #087f5b; /*Used to change icon color*/
+	width: 32px;
+	height: 32px;
+	margin-bottom: 24px;
+}
+
+.features-title {
+	margin-bottom: 16px;
+	font-size: 20px;
+}
+
+.features-text {
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+	background-color: #087f5b;
+	color: #fff;
+	padding: 24px;
+	border-radius: 12px;
+}
+
+.testimonial-box {
+	grid-column: 2 / -1;
+	align-self: center;
+}
+
+.testimonial-box h2 {
+	margin-bottom: 24px;
+	font-size: 24px;
+}
+
+.testimonial-text {
+	font-style: italic;
+	margin-bottom: 24px;
+	font-size: 18px;
+	line-height: 1.7;
+	color: #e6fcf5;
+}
+.testimonial-author {
+	color: #c3fae8;
+}
+
+/* CHAIRS */
+.chair-box {
+	padding: 32px;
+}
+.chair img {
+	border-bottom-left-radius: 0; /*Setting border radius for individual column*/
+	border-bottom-right-radius: 0; /*Setting border radius for individual column*/
+}
+.chair {
+	/* Read MDN Documentation */
+	/* Syntax:horizontal, vertical, blur, spread(size fo shadow(optional)), color */
+	box-shadow: 0px 20px 30px 0px rgba(52, 58, 64, 0.2); /*This property add shadow to element*/
+	/*for illusion to Come light from top use 0 for horizontal */
+	border-radius: 12px; /*It will round border*/
+}
+h3 {
+	margin-bottom: 24px;
+	font-size: 20px;
+}
+
+.chair-details {
+	list-style: none;
+	margin-bottom: 48px;
+}
+
+.chair-details li {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.chair-details li:last-child {
+	margin-bottom: 0;
+}
+
+.chair-icon {
+	stroke: #087f5b;
+	width: 24px;
+	height: 24px;
+}
+
+.chair-price {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	align-items: center;
+}
+.Back-Top {
+	text-decoration: none;
+	color: #e6fcf5;
+}
+.foot {
+	color: #c3fae8;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	background-color: #087f5b;
+	border: 2px solid #087f5b;
+	border-radius: 36px;
+	margin-bottom: 5px;
+	cursor:pointer;
+}
+.foot:hover {
+	background-color: #099268;
+}
