@@ -1,0 +1,26 @@
+*{
+  margin:0;
+  padding: 0;
+} 
+.box{
+  background-color:antiquewhite;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: serif;
+}
+.box1{
+color:red;
+padding:10px;
+border:2px solid black;
+margin:25px;
+height:100px;
+box-sizing:border-box;/*It give height of 100 including padding and border excluding margin*/
+}
+.box2{
+color:orange;
+padding:10px;
+border:2px solid black;
+margin:25px;/*If two margin are overlapping then margin with maximum size is applied and is known as Margin Collapse*/
+height:100px;
+box-sizing:border-box;
+}
