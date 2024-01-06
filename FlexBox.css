@@ -1,0 +1,42 @@
+.container {
+	/*Flex container properties*/
+	border: 2px solid black;
+	display: flex;
+	height: 60vh;
+  justify-content: center;
+	/*Their is no justify items in flex box*/
+	/*justify-content: center;*/ /*Horizontally : Center according to main axis*/
+	/*align-items: center;*/ /*Vertically : work only if we have only one line:Center according to main axis*/
+	align-content: center; /*work when we have multiple line*/
+	background-color: bisque;
+	/*flex-direction: column;*/ /*By Default row */
+  flex-direction: row;
+	/*Jis Direction me item hote hai vo main axis hoti hai aur dusri cross axis hoti hai*/
+	flex-wrap: wrap; /*If their are many boxes then it result in overflow/leak out of container but flex wrap move element to next line*/
+
+	/*gap: 30px;*/ /*It create gap between flex items*/
+	/* row-gap: 20px; */
+	/* column-gap: 30px; */
+	/* gap:row column */
+	/*flex-flow: row wrap; *//*row wrap:It i a short hand for flex-direction and flex-wrap*/
+  /* flex-flow: column wrap; */
+}
+.item {
+	height: 52px;
+	width: 52px;
+	background-color: red;
+	border: 2px solid black;
+	/* margin: 2px; */
+  /*flex-grow: 1;*//*It defines the ability of a flex item to change it's width and height */
+
+}
+.item1{
+  /* flex-grow: 2; */
+    flex-shrink:3;/*it is the ability to shrink flex item*/
+   /*align-self: flex-start;*//*It override aling content property*/
+  }
+.order-1{
+  order:1;/*Default:0 jitna jyada hoga utna baad me element Aayega*/
+}
+
+
