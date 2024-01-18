@@ -1,0 +1,50 @@
+.container{
+border:2px solid black;
+display: grid;
+/*grid-template-columns: 120px 100px;*//*Creates row*/
+/* grid-template-rows: 100px 100px 100px; */
+/* Giving name to lines */
+grid-template-columns: [pehla]120px [Doosra]100px;
+grid-template-rows: 100px 100px 100px;
+/*grid-template-rows: 1fr 1fr 1fr;*//*Divide in equal part*/
+/*grid-template-rows: 2fr 1fr 1fr;*//*Here 1 will take double space then two others*/
+gap:20px;/*It create gap between element*/
+height:200px;
+align-items: center;/*It center item in a grid cell vertically*/
+justify-items: center;/*It center item in a grid cell horizontally*/
+/* grid-template-columns: repeat(4,1fr); *//*It repete column according to specified value inside func*/
+
+/* grid-template-columns: repeat(4,minmax(100px,1fr)); *//*min value of width and max value of width*/
+/* if size of container is greater than grid than use align-content and justify-content else justify item and aling item */
+/*place-content: center;*//*If we do this then both justify-content and align content become center*/
+}
+.item-1{
+  grid-row:1/2;
+  grid-column:1/2;
+  background-color: orangered;
+}
+.item-4{
+  grid-row:1/2;
+  grid-column: 2;
+  background-color: green;
+  /* grid-column:1/Doosra; *//*Same as Above*/
+}
+ .item-3{
+  /* grid-row:3; */
+  /* grid-column:3; */
+  background-color: yellow;
+} 
+.item-2{
+  background-color: blue;
+  grid-row: 2;
+  grid-column: 1;
+}
+.item-5{
+  grid-row: 2;
+  grid-column: 1;
+}
+.item{
+  border:2px solid black;
+  height:55px;
+  width:55px;
+}
